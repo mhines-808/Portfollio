@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allen Hinds — UI/UX Designer & Developer</title>
+  <link rel="stylesheet" href="colors_and_type.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="#home" class="nav__logo">Allen Hinds.</a>
+    <div class="nav__links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#resume">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="btn btn-primary nav__cta" style="font-size:13px;padding:8px 16px;">Hire Me</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__mobile" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#resume">Resume</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#blog">Blog</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════ -->
+<section id="home" class="hero">
+  <div class="hero__bg"></div>
+  <div class="hero__noise"></div>
+  <div class="hero__content">
+    <p class="hero__eyebrow">UI/UX Designer &amp; Developer</p>
+    <h1 class="hero__headline">I Love To Design</h1>
+    <span class="hero__rotating">
+      I Am a <span id="typedRole"></span><span class="hero__cursor"></span>
+    </span>
+    <p class="hero__sub">Crafting digital experiences that feel effortless —<br>from concept to pixel-perfect execution.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href="#portfolio" class="btn btn-white">View My Work</a>
+      <a href="#contact" class="btn btn-outline-white">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <div class="hero__scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about__grid">
+      <!-- Photo -->
+      <div class="fade-in">
+        <div class="about__photo">
+          <div class="about__photo-placeholder">
+            <span class="about__photo-initials">AK</span>
+          </div>
+        </div>
+        <div class="about__social">
+          <a href="#" aria-label="Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.7 5.5 4.3 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="#" aria-label="Dribbble">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+          </a>
+          <a href="#" aria-label="Behance">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6h6c2.2 0 4 1.3 4 3.5 0 1.3-.7 2.3-1.7 2.9C10.7 13 12 14.3 12 16c0 2.5-2 4-4.5 4H1V6z"/><path d="M1 10h5"/><path d="M23 13h-8c0-2.2 1.8-4 4-4s4 1.8 4 4z"/><path d="M15 17c.7 1.2 1.9 2 3.5 2 1.2 0 2.3-.5 3-1.3"/><path d="M14.5 7h5"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Bio -->
+      <div class="fade-in" style="transition-delay:0.15s;">
+        <p class="about__label">About Me</p>
+        <h2 class="about__name">Allen Hinds</h2>
+        <p class="about__role">UI/UX Designer &amp; Front-end Developer</p>
+        <div class="about__bio">
+          <p>I design and build digital products that feel effortless to use. With six years of experience spanning product design, front-end development, and brand identity, I bring ideas from rough concept through to polished, shipped software.</p>
+          <p>My process is collaborative and research-driven. I care deeply about the space where user needs and business goals intersect — and finding the simplest, most considered path between the two.</p>
+          <p>Previously at Stripe and Linear, currently available for select freelance projects and collaborations.</p>
+        </div>
+        <div class="about__ctas">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="#" class="btn btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     RESUME TABS
+══════════════════════════════════════════════════ -->
+<section id="resume" class="section resume">
+  <div class="container">
+    <div class="section-header fade-in">
+      <p class="section-label">Background</p>
+      <h2 class="section-title">Education &amp; Experience</h2>
+    </div>
+    <div class="resume__tabs fade-in">
+      <button class="resume__tab active" data-tab="education">Education</button>
+      <button class="resume__tab" data-tab="experience">Experience</button>
+      <button class="resume__tab" data-tab="skills">My Skills</button>
+    </div>
+
+    <!-- Education -->
+    <div id="panel-education" class="resume__panel active fade-in">
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__date">2014 – 2018</div>
+          <div class="timeline__place">Rhode Island School of Design</div>
+          <div class="timeline__title">Bachelor of Fine Arts — Graphic Design</div>
+          <div class="timeline__desc">Focused on interaction design, typography systems, and design thinking methodologies. Graduated with distinction.</div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__date">2018 – 2020</div>
+          <div class="timeline__place">Carnegie Mellon University</div>
+          <div class="timeline__title">Master's in Human–Computer Interaction</div>
+          <div class="timeline__desc">Deep focus on user research, cognitive ergonomics, and prototyping. Thesis on reducing cognitive load in data-dense dashboards.</div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__date">2020</div>
+          <div class="timeline__place">Google UX Design Certificate</div>
+          <div class="timeline__title">Professional Certificate</div>
+          <div class="timeline__desc">Completed the end-to-end UX specialisation covering discovery, wireframing, usability testing, and hi-fi prototyping in Figma.</div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__date">2021</div>
+          <div class="timeline__place">Frontend Masters</div>
+          <div class="timeline__title">Advanced CSS &amp; React</div>
+          <div class="timeline__desc">Completed intensive workshops on CSS architecture, animation, and building scalable component libraries in React.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div id="panel-experience" class="resume__panel fade-in">
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__date">2022 – Present</div>
+          <div class="timeline__place">Stripe</div>
+          <div class="timeline__title">Senior Product Designer</div>
+          <div class="timeline__desc">Led end-to-end redesign of the merchant dashboard, improving key task completion by 34%. Collaborated with engineering on a component library used by 12 product teams.</div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__date">2020 – 2022</div>
+          <div class="timeline__place">Linear</div>
+          <div class="timeline__title">Product Designer</div>
+          <div class="timeline__desc">Designed core features for the issue-tracker product, shipping cycle tracking, command palette, and the initial mobile app used by 40k+ teams.</div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__date">2018 – 2020</div>
+          <div class="timeline__place">Freelance</div>
+          <div class="timeline__title">UX Designer &amp; Developer</div>
+          <div class="timeline__desc">Designed and built products for early-stage startups across fintech, edtech, and e-commerce. Delivered everything from brand identity to production front-end code.</div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__date">2016 – 2018</div>
+          <div class="timeline__place">IDEO</div>
+          <div class="timeline__title">Design Intern</div>
+          <div class="timeline__desc">Worked on human-centred design sprints for healthcare and civic technology clients. Ran field research sessions and rapid prototyping workshops.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="panel-skills" class="resume__panel fade-in">
+      <div class="skills__grid">
+        <div>
+          <div class="skill__label"><span>Web Design</span><span>95%</span></div>
+          <div class="skill__bar"><div class="skill__fill" data-width="95"></div></div>
+        </div>
+        <div>
+          <div class="skill__label"><span>Front-end Development</span><span>88%</span></div>
+          <div class="skill__bar"><div class="skill__fill" data-width="88"></div></div>
+        </div>
+        <div>
+          <div class="skill__label"><span>Branding &amp; Identity</span><span>82%</span></div>
+          <div class="skill__bar"><div class="skill__fill" data-width="82"></div></div>
+        </div>
+        <div>
+          <div class="skill__label"><span>UX Research</span><span>90%</span></div>
+          <div class="skill__bar"><div class="skill__fill" data-width="90"></div></div>
+        </div>
+        <div>
+          <div class="skill__label"><span>Prototyping</span><span>93%</span></div>
+          <div class="skill__bar"><div class="skill__fill" data-width="93"></div></div>
+        </div>
+        <div>
+          <div class="skill__label"><span>Marketing Design</span><span>75%</span></div>
+          <div class="skill__bar"><div class="skill__fill" data-width="75"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     SERVICES
+══════════════════════════════════════════════════ -->
+<section id="services" class="section" style="background:var(--color-bg);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <p class="section-label">What I Do</p>
+      <h2 class="section-title">My Services</h2>
+      <p class="section-subtitle">From discovery to delivery — a full-spectrum design and development practice.</p>
+    </div>
+    <div class="services__grid">
+      <div class="service-card fade-in">
+        <div class="service-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        </div>
+        <div class="service-card__title">Web Design</div>
+        <div class="service-card__desc">Purposeful layouts, refined typography, and visual systems that communicate clearly and convert reliably.</div>
+      </div>
+      <div class="service-card fade-in" style="transition-delay:0.07s;">
+        <div class="service-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="service-card__title">Development</div>
+        <div class="service-card__desc">Clean, semantic HTML, CSS, and React — built for performance, maintainability, and long-term scalability.</div>
+      </div>
+      <div class="service-card fade-in" style="transition-delay:0.14s;">
+        <div class="service-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        </div>
+        <div class="service-card__title">Branding</div>
+        <div class="service-card__desc">Identity systems that give products a distinctive, coherent voice — from logo mark to full brand guidelines.</div>
+      </div>
+      <div class="service-card fade-in" style="transition-delay:0.21s;">
+        <div class="service-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div class="service-card__title">Clean Code</div>
+        <div class="service-card__desc">Every component is readable, accessible, and documented. No hacks, no shortcuts — code you'll want to maintain.</div>
+      </div>
+      <div class="service-card fade-in" style="transition-delay:0.28s;">
+        <div class="service-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+        </div>
+        <div class="service-card__title">Fully xxx</div>
+        <div class="service-card__desc">Designed and tested across mobile, tablet, and desktop. Every breakpoint is a deliberate layout decision.</div>
+      </div>
+      <div class="service-card fade-in" style="transition-delay:0.35s;">
+        <div class="service-card__icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="service-card__title">Custom Support</div>
+        <div class="service-card__desc">Ongoing design consultation, iteration support, and QA reviews — so your product keeps improving after launch.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     STATS
+══════════════════════════════════════════════════ -->
+<section id="stats" class="stats">
+  <div class="container">
+    <div class="stats__grid">
+      <div class="fade-in" style="text-align:center;">
+        <div class="stat__number" data-target="86" data-plus="true"><span class="num">0</span><span class="stat__plus">+</span></div>
+        <div class="stat__label">Happy Customers</div>
+      </div>
+      <div class="fade-in" style="text-align:center;transition-delay:0.1s;">
+        <div class="stat__number" data-target="124" data-plus="true"><span class="num">0</span><span class="stat__plus">+</span></div>
+        <div class="stat__label">Projects Completed</div>
+      </div>
+      <div class="fade-in" style="text-align:center;transition-delay:0.2s;">
+        <div class="stat__number" data-target="55" data-plus="true"><span class="num">0</span><span class="stat__plus">k</span></div>
+        <div class="stat__label">Video Downloads</div>
+      </div>
+      <div class="fade-in" style="text-align:center;transition-delay:0.3s;">
+        <div class="stat__number" data-target="377" data-plus="true"><span class="num">0</span><span class="stat__plus">k</span></div>
+        <div class="stat__label">Lines of Code</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     PORTFOLIO
+══════════════════════════════════════════════════ -->
+<section id="portfolio" class="section">
+  <div class="container">
+    <div class="section-header fade-in">
+      <p class="section-label">Selected Work</p>
+      <h2 class="section-title">My Portfolio</h2>
+    </div>
+    <div class="portfolio__filters fade-in">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="brand">Brand</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="graphics">Graphics</button>
+    </div>
+    <div class="portfolio__grid fade-in">
+      <div class="portfolio__item" data-cat="design">
+        <div class="portfolio__item-img pi-1" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#A0A0B8" stroke-width="1.2" stroke-linecap="round"><rect x="8" y="8" width="32" height="32" rx="4"/><path d="M8 18h32"/><path d="M18 48V18"/></svg>
+        </div>
+        <div class="portfolio__overlay">
+          <div><div class="portfolio__item-tag">Design</div><div class="portfolio__item-title">Dashboard Redesign</div></div>
+        </div>
+      </div>
+      <div class="portfolio__item" data-cat="brand">
+        <div class="portfolio__item-img pi-2" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#A0B8B0" stroke-width="1.2" stroke-linecap="round"><circle cx="24" cy="24" r="18"/><path d="M24 6a25 25 0 0 0 0 36 25 25 0 0 0 0-36"/><path d="M6 24h36"/></svg>
+        </div>
+        <div class="portfolio__overlay">
+          <div><div class="portfolio__item-tag">Brand</div><div class="portfolio__item-title">Fintech Identity System</div></div>
+        </div>
+      </div>
+      <div class="portfolio__item" data-cat="graphics">
+        <div class="portfolio__item-img pi-3" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#B8A0A0" stroke-width="1.2" stroke-linecap="round"><path d="M12 36L24 8l12 28"/><path d="M16 26h16"/></svg>
+        </div>
+        <div class="portfolio__overlay">
+          <div><div class="portfolio__item-tag">Graphics</div><div class="portfolio__item-title">Editorial Poster Series</div></div>
+        </div>
+      </div>
+      <div class="portfolio__item" data-cat="design">
+        <div class="portfolio__item-img pi-4" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#A0B8A8" stroke-width="1.2" stroke-linecap="round"><rect x="10" y="6" width="28" height="36" rx="3"/><path d="M16 16h16"/><path d="M16 22h16"/><path d="M16 28h10"/></svg>
+        </div>
+        <div class="portfolio__overlay">
+          <div><div class="portfolio__item-tag">Design</div><div class="portfolio__item-title">Mobile Onboarding</div></div>
+        </div>
+      </div>
+      <div class="portfolio__item" data-cat="brand">
+        <div class="portfolio__item-img pi-5" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#B8B0A0" stroke-width="1.2" stroke-linecap="round"><polygon points="24,6 44,38 4,38"/></svg>
+        </div>
+        <div class="portfolio__overlay">
+          <div><div class="portfolio__item-tag">Brand</div><div class="portfolio__item-title">Startup Brand Mark</div></div>
+        </div>
+      </div>
+      <div class="portfolio__item" data-cat="graphics">
+        <div class="portfolio__item-img pi-6" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#AEA0B8" stroke-width="1.2" stroke-linecap="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="8"/><circle cx="24" cy="24" r="3"/></svg>
+        </div>
+        <div class="portfolio__overlay">
+          <div><div class="portfolio__item-tag">Graphics</div><div class="portfolio__item-title">Concentric Icon Set</div></div>
+        </div>
+      </div>
+      <div class="portfolio__item" data-cat="design">
+        <div class="portfolio__item-img pi-7" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#A0B8B8" stroke-width="1.2" stroke-linecap="round"><rect x="6" y="6" width="16" height="16" rx="2"/><rect x="26" y="6" width="16" height="16" rx="2"/><rect x="6" y="26" width="16" height="16" rx="2"/><rect x="26" y="26" width="16" height="16" rx="2"/></svg>
+        </div>
+        <div class="portfolio__overlay">
+          <div><div class="portfolio__item-tag">Design</div><div class="portfolio__item-title">Design System</div></div>
+        </div>
+      </div>
+      <div class="portfolio__item" data-cat="brand">
+        <div class="portfolio__item-img pi-8" style="display:flex;align-items:center;justify-content:center;">
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#B8AEA0" stroke-width="1.2" stroke-linecap="round"><path d="M8 24 C8 13 16 6 24 6 C32 6 40 13 40 24 C40 35 32 42 24 42 C16 42 8 35 8 24Z"/><path d="M16 24 C16 19 19 15 24 15 C29 15 32 19 32 24"/></svg>
+        </div>
+        <div class="portfolio__overlay">
+          <div><div class="portfolio__item-tag">Brand</div><div class="portfolio__item-title">SaaS Brand Refresh</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio__cta fade-in">
+      <a href="#" class="btn btn-outline">View All Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════════════════ -->
+<section id="testimonials" class="section testimonials">
+  <div class="container">
+    <div class="section-header fade-in" style="color:#fff;">
+      <p class="section-label" style="color:rgba(255,255,255,0.4);">Kind Words</p>
+      <h2 class="section-title" style="color:#fff;">Testimonials</h2>
+    </div>
+    <div class="testimonials__slider fade-in">
+      <div class="testimonial-slide">
+        <span class="testimonial__quote-mark">"</span>
+        <p class="testimonial__text">Allen brought our product from a messy prototype to something our users genuinely love. The attention to craft — at every layer, from research to code — is rare. We shipped faster and with more confidence than on any previous project.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">SR</div>
+          <div>
+            <div class="testimonial__name">Sara Rodriguez</div>
+            <div class="testimonial__role">CPO, Helios Finance</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <span class="testimonial__quote-mark">"</span>
+        <p class="testimonial__text">Working with Allen felt like having a design director and a senior engineer in one. They pushed back when our ideas were wrong, presented alternatives with clear rationale, and delivered production-ready code we could maintain.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">TW</div>
+          <div>
+            <div class="testimonial__name">Tom Wakefield</div>
+            <div class="testimonial__role">Founder, Arcbase</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <span class="testimonial__quote-mark">"</span>
+        <p class="testimonial__text">Our onboarding completion rate went from 41% to 78% after Allen redesigned the flow. The process was collaborative, the outcomes were measurable, and the team learned a lot watching them work. Highly recommend.</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">MH</div>
+          <div>
+            <div class="testimonial__name">Maya Hendricks</div>
+            <div class="testimonial__role">Head of Growth, Crescent</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials__dots fade-in">
+      <button class="testimonials__dot"></button>
+      <button class="testimonials__dot"></button>
+      <button class="testimonials__dot"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     BLOG
+══════════════════════════════════════════════════ -->
+<section id="blog" class="section" style="background:var(--color-bg);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <p class="section-label">Writing</p>
+      <h2 class="section-title">My Blog</h2>
+      <p class="section-subtitle">Thoughts on design craft, process, and the details that matter.</p>
+    </div>
+    <div class="blog__grid">
+      <div class="blog-card fade-in">
+        <div class="blog-card__img">
+          <div class="blog-card__img-inner pi-1" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+            <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#A0A0B8" stroke-width="1.2" stroke-linecap="round"><rect x="8" y="8" width="32" height="32" rx="4"/><path d="M8 18h32"/><path d="M18 48V18"/></svg>
+          </div>
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__tag">Design Systems</div>
+          <div class="blog-card__title">Tokens are not a design system</div>
+          <div class="blog-card__excerpt">What people get wrong about scaling design — and why a shared vocabulary is just the beginning, not the destination.</div>
+          <div class="blog-card__meta">
+            <span>Nov 2024 · 4 min read</span>
+            <a href="#" class="blog-card__read">
+              Read more
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card fade-in" style="transition-delay:0.1s;">
+        <div class="blog-card__img">
+          <div class="blog-card__img-inner pi-4" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+            <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#A0B8A8" stroke-width="1.2" stroke-linecap="round"><path d="M12 24 Q24 8 36 24 Q24 40 12 24Z"/><circle cx="24" cy="24" r="4"/></svg>
+          </div>
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__tag">UX Philosophy</div>
+          <div class="blog-card__title">The case for calm interfaces</div>
+          <div class="blog-card__excerpt">Designing for focus in an attention economy means making deliberate choices about what not to show — and when to stay quiet.</div>
+          <div class="blog-card__meta">
+            <span>Jan 2025 · 7 min read</span>
+            <a href="#" class="blog-card__read">
+              Read more
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card fade-in" style="transition-delay:0.2s;">
+        <div class="blog-card__img">
+          <div class="blog-card__img-inner pi-6" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+            <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="#AEA0B8" stroke-width="1.2" stroke-linecap="round"><path d="M8 36 L24 12 L40 36"/><path d="M16 28 L32 28"/></svg>
+          </div>
+        </div>
+        <div class="blog-card__body">
+          <div class="blog-card__tag">Process</div>
+          <div class="blog-card__title">How I run design critiques</div>
+          <div class="blog-card__excerpt">A practical framework for getting feedback that actually improves the work — not just reassures the designer in the room.</div>
+          <div class="blog-card__meta">
+            <span>Mar 2025 · 6 min read</span>
+            <a href="#" class="blog-card__read">
+              Read more
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════════════ -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <div class="section-header fade-in">
+      <p class="section-label" style="color:rgba(255,255,255,0.35);">Let's Talk</p>
+      <h2 class="section-title" style="color:#fff;">Get In Touch</h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.45);">Available for select projects and collaborations. I'll get back to you within 24 hours.</p>
+    </div>
+    <div class="contact__grid fade-in">
+      <!-- Form -->
+      <div>
+        <form id="contactForm" class="contact__form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-input" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Subject</label>
+            <input type="text" class="form-input" placeholder="What's this about?">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-white">Send Message</button>
+          </div>
+        </form>
+        <div id="formSuccess" style="display:none;background:rgba(46,125,91,0.15);border:1px solid rgba(46,125,91,0.3);border-radius:var(--radius-sm);padding:20px 24px;">
+          <div style="font-size:15px;font-weight:600;color:#5EC99A;margin-bottom:4px;">Message sent!</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.55);">Thanks — I'll be in touch within 24 hours.</div>
+        </div>
+      </div>
+      <!-- Info -->
+      <div class="contact__info">
+        <div class="contact__info-block">
+          <div class="contact__info-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.87a16 16 0 0 0 6.12 6.12l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact__info-label">Phone</div>
+            <div class="contact__info-value">+</div>
+          </div>
+        </div>
+        <div class="contact__info-block">
+          <div class="contact__info-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <div class="contact__info-label">Email</div>
+            <div class="contact__info-value">hello@AllenHinds.design</div>
+          </div>
+        </div>
+        <div class="contact__info-block">
+          <div class="contact__info-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact__info-label">Location</div>
+            <div class="contact__info-value">San Francisco, CA<br><span style="color:rgba(255,255,255,0.3);font-size:12px;">Open to remote worldwide</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <p class="footer__text">© 2025 <a href="#home">Allen Hinds</a>. Designed with care. Built with purpose.</p>
+  </div>
+</footer>
+
+<script src="portfolio.js"></script>
+<script>
+  // Init Lucide (not used inline here but available)
+  if (window.lucide) lucide.createIcons();
+</script>
+</body>
+</html>
