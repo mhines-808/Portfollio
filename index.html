@@ -957,12 +957,28 @@
     .skills-grid, .projects-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
     .nav-links, .nav-cta { display: none; }
     .nav-menu-btn { display: flex; }
+
+    /* Experience section: stack sidebar + timeline vertically */
+    .experience-grid {
+      grid-template-columns: 1fr !important;
+      gap: 40px !important;
+    }
+    /* Remove sticky so the header scrolls naturally */
+    .experience-grid > div:first-child {
+      position: static !important;
+    }
   }
   @media (max-width: 600px) {
     .skills-grid, .projects-grid, .testimonials-grid { grid-template-columns: 1fr; }
     .service-cards { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
     .hero-stats { gap: 24px; }
+
+    /* Tighten experience section padding and timeline on small screens */
+    #experience { padding: 60px 0; }
+    .timeline { padding-left: 28px; }
+    .timeline-role { font-size: 16px; }
+    .timeline-item { margin-bottom: 36px; }
   }
 
   /* Shimmer gradient text */
@@ -1939,7 +1955,7 @@ function App() {
       {/* Experience */}
       <section id="experience" className="section" style={{background:'var(--bg2)'}}>
         <div className="container">
-          <div style={{display:'grid',gridTemplateColumns:'1fr 1.5fr',gap:60,alignItems:'start'}}>
+          <div className="experience-grid" style={{display:'grid',gridTemplateColumns:'1fr 1.5fr',gap:60,alignItems:'start'}}>
             <div style={{position:'sticky',top:100}}>
               <div className="section-label">Career Path</div>
               <h2 className="section-title">My <span>Journey</span></h2>
